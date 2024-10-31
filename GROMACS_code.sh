@@ -149,6 +149,15 @@ gmx mdrun -deffnm md_0_2_clamp_rest -rerun md_0_2_1.xtc
 
 gmx energy -f md_0_2_clamp_rest.edr -o interaction_energy_clamp_rest_1ELR.xvg 
 
+#additionally, RMSF was calculated using command below 
+
+gmx rmsf -f md_0_2_1.xtc -s md.tpr -n index_TPR_domain.ndx -o rmsf_1ELR.xvg -res 
+
+#index option was used, since rmsf of only TPR domain was needed for comparison, the index was produced 
+#the same way as showed before, but along with choosing only atoms from TPR domain, 'a 1-1088 & a CA' was used to choose only Ca backbone atoms
+
+#the new option created before 'a 1-1088 $ a CA', was chosen after running the command
+
 
 
 
