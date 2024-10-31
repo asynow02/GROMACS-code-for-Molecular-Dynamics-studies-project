@@ -5,7 +5,7 @@ This folder contains a .sh file with the code used for the Molecular Dynamics si
 References: 
 Code, along with all .mdp files used, was obtained from the GROMACS tutorial 1 - Lysozyme in Water, made by Dr Justin A. Lemkul http://www.mdtutorials.com/gmx/lysozyme/index.html
 
-Some parts were added and are not in the original code due to specific data required for analysis, such as hydrogen bonds data or Lennard-Jones and Coulombic energies data. To research additonal commands GROMACS software website was used https://manual.gromacs.org
+Some parts were added and are not in the original code due to specific data required for analysis, such as hydrogen bonds data or Lennard-Jones and Coulombic energies data. To research additonal commands GROMACS website was used https://manual.gromacs.org
 
 The only thing changed in md.mdp file was the time frame of the simulation from 1 ns to 100 ns and later for energy data, the energygrps were added.
 
